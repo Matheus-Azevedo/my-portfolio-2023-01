@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Content, Ul, Li, TitleProject, Url, CreatedAt } from './style';
+import { Container, Content, Ul, Li, 
+    TitleProject, Url, CreatedAt } from '../../styles/styleProjects';
 import { toast } from 'react-toastify';
-import { iProject } from './types';
+import { iProject } from '../../utils/typesProjects';
 
 export default function Projects() {
   const [itemsApi, setItemsApi] = useState([]);
