@@ -45,11 +45,14 @@ export const NavLinks = styled.nav`
 
 export const Ancora = styled.a`
   font-size: 20px;
+  color: white;
+  text-decoration: underline;
   height: 100px;
   transition: 0.3s;
   
   &.active {
     background-color: black;
+    text-decoration: underline;
   }
   @media (min-width: 560px) {
     align-items: center;
