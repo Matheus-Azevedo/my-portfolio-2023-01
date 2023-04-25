@@ -2,7 +2,6 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Container, Content, Infos, Name, 
          Function, Intro, LinkProjects, Logo, Img } from '@styles/indexStyle';
 import Link from 'next/link';
-import Photo from '@images/logo.png';
 import { intro1, intro2, intro3 } from '@/utils/introduction';
 
 export default function Home() {
@@ -10,9 +9,9 @@ export default function Home() {
    <Container>
      <Content>
       <Infos>
-        <Name>Primeiramente seja bem vindo!</Name>
         <Name>Matheus Eduardo</Name>
-        <Function>FullStack Developer</Function>
+        <Function>Backend Developer</Function>
+        <Intro>Primeiramente, seja bem vindo!</Intro>
         <Intro>{intro1}</Intro>
         <Intro>{intro2}</Intro>
         <Intro>{intro3}</Intro>
@@ -21,7 +20,7 @@ export default function Home() {
         </Link>
       </Infos>
       <Logo>
-        <Img src={Photo} alt="logo" />
+        <Img src='/images/logo.png' alt="logo" />
       </Logo>
      </Content>
    </Container>

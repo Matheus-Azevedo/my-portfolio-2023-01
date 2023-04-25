@@ -1,5 +1,5 @@
 export const intro1 = 
-  'Sou Backend Developer, Bacharel em Ciência da Computação com MBA em Gestão Empresarial;';
+  'Sou Bacharel em Ciência da Computação com MBA em Gestão Empresarial;';
 
 export const intro2 = 
   'Fui Técnico/Chefe de guarnição pela pioneira em segurança e transporte de valores, Brink\'s;';
