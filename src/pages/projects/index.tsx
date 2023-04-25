@@ -16,7 +16,9 @@ export default function Projects() {
         const data = await res.json();
         setItemsApi(data);
       })
-      .catch((e) => console.log(e));
+      .catch((e) => {
+        console.error(e);
+      });
     }
 
     getGitHubAPI();
