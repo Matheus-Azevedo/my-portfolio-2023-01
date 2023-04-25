@@ -39,9 +39,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Commands
 
-npx create-next-app ./
-npm install styled-components
-npm install react-icons
-npm i -D eslint
-npx eslint --init
-npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+- npx create-next-app ./
+- npm install styled-components
+- npm install react-icons
+- npm i -D eslint
+- npx eslint --init
+- npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
