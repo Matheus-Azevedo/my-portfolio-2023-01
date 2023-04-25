@@ -1,9 +1,29 @@
+import { FaArrowRight } from 'react-icons/fa';
+import { Container, Content, Infos, Name, 
+         Function, Intro, LinkProjects, Logo, Img } from '@styles/indexStyle';
+import Link from 'next/link';
+import Photo from '@images/logo.png';
+
 export default function Home() {
   return (
-    <div>
-      <h1>
-        Home
-      </h1>
-    </div>
+   <Container>
+     <Content>
+      <Infos>
+        <Name>Primeiramente seja bem vindo!</Name>
+        <Name>Matheus Eduardo</Name>
+        <Function>FullStack Developer</Function>
+        <Intro>Graduado em Sistemas de Informação, 
+          tenho experiência em desenvolvimento Web
+          (React, Asp, JS e outros), mobile e criação de conteúdo para o YouTube.
+        </Intro>
+        <Link href="projects">
+          <LinkProjects>PROJETOS <FaArrowRight /></LinkProjects>
+        </Link>
+      </Infos>
+      <Logo>
+        <Img src={Photo} alt="logo" />
+      </Logo>
+     </Content>
+   </Container>
   );
 }

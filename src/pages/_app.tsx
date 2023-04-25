@@ -7,11 +7,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Meu Portfolio | 2023</title>
+        <title>Matheus Eduardo | Portfolio</title>
       </Head>
       <Header />
       <Component {...pageProps} />
     </>
-    
   );
 }
