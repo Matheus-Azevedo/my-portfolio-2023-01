@@ -32,7 +32,7 @@ export const NavLinks = styled.nav`
     top: 0px;
     right: 0px;
     width: 60%;
-    right: ${props => props.sidebar ? '0' : '-100%'};
+    right: ${(props) => props.sidebar ? '0' : '-100%'};
     transition: 0.5s;
     a {
       margin-top: 100px;

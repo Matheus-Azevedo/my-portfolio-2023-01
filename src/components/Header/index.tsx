@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import { Container, Title, NavLinks, Ancora, Content, Menu, CloseSidebar, ContentTitle, SubTitle } from './style';
+import { Container, Title, NavLinks, Ancora,
+         Content, Menu, CloseSidebar, ContentTitle, SubTitle } from './style';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function Header() {
-  const [sidebar, setSidebar] = useState(false)
-  const { asPath } = useRouter()
+  const [sidebar, setSidebar] = useState(false);
+  const { asPath } = useRouter();
 
-  const showSiderbar = () => setSidebar(!sidebar)
+  const showSiderbar = () => setSidebar(!sidebar);
 
   function activeLink(path: string) {
-    return asPath === `/${path}` ? 'active' : ''
+    return asPath === `/${path}` ? 'active' : '';
   }
 
   return (
@@ -42,5 +43,5 @@ export default function Header() {
         </NavLinks>
       </Content>
     </Container>
-  )
+  );
 }

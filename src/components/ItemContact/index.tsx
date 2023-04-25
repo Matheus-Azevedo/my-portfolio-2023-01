@@ -1,5 +1,5 @@
-import React from 'react'
-import { Item, Icon, Text } from './style'
+import React from 'react';
+import { Item, Icon, Text } from './style';
 
 export default function ItemContact({ IconFa, LinkContact }) {
   return (
@@ -11,5 +11,5 @@ export default function ItemContact({ IconFa, LinkContact }) {
         {LinkContact}
       </Text>
     </Item>
-  )
+  );
 }
