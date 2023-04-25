@@ -3,6 +3,7 @@ import { Container, Content, Infos, Name,
          Function, Intro, LinkProjects, Logo, Img } from '@styles/indexStyle';
 import Link from 'next/link';
 import Photo from '@images/logo.png';
+import { intro1, intro2, intro3 } from '@/utils/introduction';
 
 export default function Home() {
   return (
@@ -12,10 +13,9 @@ export default function Home() {
         <Name>Primeiramente seja bem vindo!</Name>
         <Name>Matheus Eduardo</Name>
         <Function>FullStack Developer</Function>
-        <Intro>Graduado em Sistemas de Informação, 
-          tenho experiência em desenvolvimento Web
-          (React, Asp, JS e outros), mobile e criação de conteúdo para o YouTube.
-        </Intro>
+        <Intro>{intro1}</Intro>
+        <Intro>{intro2}</Intro>
+        <Intro>{intro3}</Intro>
         <Link href="projects">
           <LinkProjects>PROJETOS <FaArrowRight /></LinkProjects>
         </Link>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Content, Ul, Li, TitleProject, Url, CreatedAt } from './style';
+import { toast } from 'react-toastify';
+import { iProject } from './types';
 
 export default function Projects() {
   const [itemsApi, setItemsApi] = useState([]);
@@ -7,18 +9,17 @@ export default function Projects() {
   useEffect(() => {
     const abortController = new AbortController(); 
 
-    function getGitHubAPI() {
-      fetch('https://api.github.com/users/Matheus-Azevedo/repos')
-      .then(async (res) => {
-        if (!res.ok) {
-          throw new Error(res.statusText);
+    async function getGitHubAPI() {
+      try {
+        const response = await fetch('https://api.github.com/users/Matheus-Azevedo/repos');
+        if (!response.ok) {
+          throw new Error(response.statusText);
         }
-        const data = await res.json();
+        const data = await response.json();
         setItemsApi(data);
-      })
-      .catch((e) => {
-        console.error(e);
-      });
+      } catch (error) {
+        toast.error('Erro ao buscar dados da API');
+      }
     }
 
     getGitHubAPI();
@@ -30,7 +31,7 @@ export default function Projects() {
     <Container>
      <Content>
        <Ul>
-        {itemsApi.map((item) => (
+        {itemsApi.map((item: iProject) => (
           <Li key={item.id}>
             <TitleProject>{item.name.toUpperCase()}</TitleProject>
             <Url>URL: {item.url}</Url>

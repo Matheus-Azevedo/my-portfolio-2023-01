@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container, Content } from './style'
-import { FaLinkedin, FaEnvelope, FaGithub, FaWhatsapp } from 'react-icons/fa'
-import ItemContact from '@components/ItemContact'
+import React from 'react';
+import { Container, Content } from './style';
+import { FaLinkedin, FaEnvelope, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import ItemContact from '@components/ItemContact';
 
 export default function Contact() {
   return (
@@ -25,5 +25,5 @@ export default function Contact() {
         />
       </Content>
     </Container>
-  )
+  );
 }
