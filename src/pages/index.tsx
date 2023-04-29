@@ -10,7 +10,7 @@ export default function Home() {
      <Content>
       <Infos>
         <Name>Matheus Eduardo</Name>
-        <Function>Backend Developer</Function>
+        <Function>Fullstack Developer</Function>
         <Intro>Primeiramente, seja bem vindo!</Intro>
         <Intro>{intro1}</Intro>
         <Intro>{intro2}</Intro>
